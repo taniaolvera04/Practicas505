@@ -513,7 +513,6 @@ btnHip.onclick = () => {
     div.innerHTML = inf;
 };
 
-
 // BOTÓN DE FORMULARIOS
 btnFor.onclick = () => {
     let inf = `
@@ -531,6 +530,9 @@ btnFor.onclick = () => {
         <li>Menús desplegables (<code>&lt;select&gt;</code>): Ofrecen una lista de opciones.</li>
         <li>Textareas (<code>&lt;textarea&gt;</code>): Permiten ingresar textos largos en varias líneas.</li>
         <li>Contraseñas (<code>&lt;input type="password"&gt;</code>): Los caracteres ingresados se muestran como puntos o asteriscos para ocultar el contenido.</li>
+        <li>Campos de archivo (<code>&lt;input type="file"&gt;</code>): Permiten a los usuarios seleccionar y cargar archivos.</li>
+        <li>Campos de fecha y hora (<code>&lt;input type="date"&gt;</code>, <code>&lt;input type="time"&gt;</code>): Permiten seleccionar fechas y horas.</li>
+        <li>Campos de color (<code>&lt;input type="color"&gt;</code>): Permiten seleccionar un color.</li>
     </ul>
     <br>
 
@@ -639,6 +641,42 @@ btnFor.onclick = () => {
         <input type="submit" value="Enviar">
     </form>
     <p>Este formulario tiene un campo de texto para ingresar una dirección, con autocompletado activado.</p>
+<br>
+
+    <h3>Ejemplo de Campo de Archivo</h3>
+    <form>
+        <label for="fileUpload">Seleccionar archivo:</label>
+        <input type="file" id="fileUpload" name="fileUpload">
+        <input type="submit" value="Subir Archivo">
+    </form>
+    <p>Este formulario permite seleccionar y cargar un archivo.</p>
+<br>
+
+    <h3>Ejemplo de Campo de Fecha</h3>
+    <form>
+        <label for="date">Fecha:</label>
+        <input type="date" id="date" name="date">
+        <input type="submit" value="Enviar">
+    </form>
+    <p>Este formulario permite seleccionar una fecha.</p>
+<br>
+
+    <h3>Ejemplo de Campo de Hora</h3>
+    <form>
+        <label for="time">Hora:</label>
+        <input type="time" id="time" name="time">
+        <input type="submit" value="Enviar">
+    </form>
+    <p>Este formulario permite seleccionar una hora.</p>
+<br>
+
+    <h3>Ejemplo de Campo de Color</h3>
+    <form>
+        <label for="color">Color:</label>
+        <input type="color" id="color" name="color">
+        <input type="submit" value="Enviar">
+    </form>
+    <p>Este formulario permite seleccionar un color.</p>
     `;
 
     div.innerHTML = inf;
