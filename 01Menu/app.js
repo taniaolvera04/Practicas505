@@ -780,6 +780,9 @@ btnSem.onclick = () => {
         </details>
     </div>
     <p>Este ejemplo muestra un elemento que se puede expandir para mostrar información adicional.</p>
+    <br>
+    <img src="img/frame.JPG" alt="Descripción de la imagen" style="width:800px; height: auto;">
+  
     `;
 
     div.innerHTML = inf;
